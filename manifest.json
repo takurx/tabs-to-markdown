@@ -3,17 +3,34 @@
   "name": "Tabs to Markdown",
   "version": "1.0.0",
   "description": "現在のFirefoxウィンドウのタブをMarkdownリストとして出力します。",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "64": "icons/icon-64.png",
+    "128": "icons/icon-128.png"
+  },
   "permissions": [
     "tabs",
     "clipboardWrite"
   ],
   "action": {
     "default_title": "タブをMarkdownで出力",
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "64": "icons/icon-64.png"
+    }
   },
   "browser_specific_settings": {
     "gecko": {
-      "id": "tabs-to-markdown@example.local"
+      "id": "tabs-to-markdown@taku3wzr",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
     }
   }
 }
